@@ -32,3 +32,6 @@ class WizardBuilding:
 
 class ModBuilding:
     tractor_garage = "Tractor Garage"
+    greenhouse_sprinklers = ("Greenhouse Sprinkler Upgrade",
+                             "Greenhouse Sprinkler Upgrade 2",
+                             "Greenhouse Sprinkler Upgrade 3")

@@ -3,7 +3,7 @@ from dataclasses import dataclass
 from typing import ClassVar
 
 from .base import FeatureBase
-from ...strings.building_names import Building
+from ...strings.building_names import Building, ModBuilding
 
 progressive_house = "Progressive House"
 
@@ -27,6 +27,9 @@ def to_progressive_item(building: str) -> tuple[str, int]:
         return f"Progressive {building[building.index(' ') + 1:]}", 3
     elif building in progressive_house_by_upgrade_name:
         return progressive_house, progressive_house_by_upgrade_name[building]
+    elif building in ModBuilding.greenhouse_sprinklers:
+        idx = ModBuilding.greenhouse_sprinklers.index(building)
+        return "Progressive Hidden Sprinklers", idx+1
 
     return building, 1
 

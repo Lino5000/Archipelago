@@ -4035,3 +4035,6 @@ id,region,name,tags,content_packs
 58247,Shipping,Shipsanity: Snatcher Worm,SHIPSANITY,Stardew Valley Expanded
 58248,Shipping,Shipsanity: Digging Like Worms,SHIPSANITY,Archaeology
 59000,Farm,Read Digging Like Worms,"BOOKSANITY,BOOKSANITY_SKILL",Archaeology
+59001,Carpenter Shop,Greenhouse Sprinkler Upgrade Blueprint,BUILDING_BLUEPRINT,Greenhouse Sprinklers
+59002,Carpenter Shop,Greenhouse Sprinkler Upgrade 2 Blueprint,BUILDING_BLUEPRINT,Greenhouse Sprinklers
+59003,Carpenter Shop,Greenhouse Sprinkler Upgrade 3 Blueprint,BUILDING_BLUEPRINT,Greenhouse Sprinklers

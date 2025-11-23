@@ -1019,7 +1019,7 @@ all_mods = {ModNames.deepwoods, ModNames.tractor, ModNames.big_backpack,
             ModNames.jasper, ModNames.alec, ModNames.yoba, ModNames.eugene,
             ModNames.wellwick, ModNames.ginger, ModNames.shiko, ModNames.delores,
             ModNames.ayeisha, ModNames.riley, ModNames.skull_cavern_elevator, ModNames.sve, ModNames.distant_lands,
-            ModNames.alecto, ModNames.lacey, ModNames.boarding_house}
+            ModNames.alecto, ModNames.lacey, ModNames.boarding_house, ModNames.greenhouse_sprinklers}
 
 # These mods have been disabled because either they are not updated for the current supported version of Stardew Valley,
 # or we didn't find the time to validate that they work or fix compatibility issues if they do.
