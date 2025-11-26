@@ -11,18 +11,17 @@ from ...strings.craftable_names import Sprinkler
 from ...strings.region_names import Region
 from ...strings.villager_names import NPC
 
-UPGRADE_COSTS_MEDIUM = (
-    # Gold, sprinkler type, sprinkler count, battery count, wizard heart count
+# Gold, sprinkler type, sprinkler count, battery count, wizard heart count
+SingleCost = tuple[int, str, int, int, int]
+UPGRADE_COSTS_MEDIUM: tuple[SingleCost, ...] = (
     (20_000, Sprinkler.quality, 5, 1, 2),
     (30_000, Sprinkler.iridium, 5, 5, 5),
     (50_000, Sprinkler.iridium, 20, 10, 10),
 )
 
-SingleCost = tuple[int, str, int, int, int]
-
 def generate_buildings(costs: tuple[SingleCost, ...]) -> tuple[Building, ...]:
     out: list[Building] = []
-    for i, (gold, sprinkler_type, sprinklers, batteries, hearts) in enumerate(UPGRADE_COSTS_MEDIUM):
+    for i, (gold, sprinkler_type, sprinklers, batteries, hearts) in enumerate(costs):
         has_prev_building: Requirement
         if i == 0:
             # First upgrade needs the Greenhouse to have been repaired
